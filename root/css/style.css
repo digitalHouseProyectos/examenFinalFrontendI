@@ -9,6 +9,7 @@
 :root {
     --primary-color-celeste: #3CDDF3;
     --primary-color-violeta: #8B48BF;
+    --gris-oscuro: #1E1E26;
     --secondary-color-gris: #B3B2B7;
     --secondary-color-azul: #232851;
     --variante-color: rgb(249, 249, 249);
@@ -126,6 +127,52 @@ ol p {
     text-align: left;
 }
 
+#section-cards {
+    align-items: center;
+    flex-direction: column;
+}
 
+#card-ali {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#card-ali img {
+    width: 20%;
+}
+
+#card-ali p {
+    margin: 0 50px;
+    text-align: center;
+}
+
+#section-purple {
+    align-items: center;
+    background-color: var(--primary-color-violeta);
+    color: #fff;
+    flex-direction: column;
+    height: 318px;
+    justify-content: center;
+    text-align: center;
+    width: 484px;
+}
+
+#section-purple h2 {
+    font-size: 40px;
+    letter-spacing: -0.005em;
+    margin: 0 70px;
+}
+
+#get-started-down {
+    background-color: #fff;
+    color: var(--primary-color-violeta);
+}
+
+footer {
+    background-color: var(--gris-oscuro);
+    height: 535.89px;
+    width: 480px;
+}
 
 
