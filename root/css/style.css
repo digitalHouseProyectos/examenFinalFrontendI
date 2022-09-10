@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap%27');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --primary-color-celeste: #3CDDF3;
+    --primary-color-violeta: #8B48BF;
+    --secondary-color-gris: #1E1E26;
+    --secondary-color-azul: #232851;
+    --variante-color: rgb (249, 249, 249);
+}
+
+html {   
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+.hidden {
+    display:none
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+#section-diagrama {
+    flex-direction: column-reverse;
+}
+
+header {
+    margin: 50px 0 10px;
+}
+
+#section-diagrama article {
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+}
+
+h1 {
+    color: var(--secondary-color-azul);
+    font-size: 58px;
+    letter-spacing: -0.035em;
+}
+
+#section-diagrama p {
+    font-size: 16.56px;
+    margin: 10px 60px 20px;
+}
+
+.btn {
+    background-color: var(--primary-color-violeta);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    height: 44px;
+    width: 134px;
+}
+
+#section-middle {
+
+}
+
+#section-middle article h2 {
+    color: var(--secondary-color-azul);
+    font-size: 36px;
+    text-align: center;
+}
+
+#section-middle article >p {
+    font-size: 16px;
+    text-align: center;
+}
+

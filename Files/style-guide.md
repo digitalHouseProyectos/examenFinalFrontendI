@@ -31,6 +31,10 @@ Variante gris claro: rgb (249, 249, 249)
 - Family: [Be Vietnam](https://fonts.google.com/specimen/Be+Vietnam)
 - Weights: 400, 500, 700
 
+*** Tipografía:
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap%27);
+font-family: 'Be Vietnam Pro', sans-serif;
+
 ## Icons
 
 Para los íconos sociales, puede usar los íconos provistos o una biblioteca de íconos de fuentes. Ej:
