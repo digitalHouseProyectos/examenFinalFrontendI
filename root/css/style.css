@@ -210,6 +210,10 @@ footer {
     width: 100%;
 }
 
+footer form {
+    margin-top: 40px;
+}
+
 footer ul {
     color: #fff;
     justify-content: space-between;
@@ -240,13 +244,21 @@ input::placeholder {
     width: 63px;
 }
 
+#logo-redes {
+    align-items: center;
+    flex-direction: column;
+}
+
 #redes-sociales {
-    width: 110%;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    width: 300%;
 } 
 
 footer p {
     color: #8C8C94;
     font-size: 12.5px;
+    margin-bottom: 30px;
 }
 
 
@@ -362,9 +374,19 @@ footer p {
         flex-direction: row-reverse;
    }
 
+   footer p {
+        display: none;
+   }
+
    #logo-redes {
         display: flex;
         flex-direction: column-reverse;
+   }
+
+   #form::after {
+    content: "Copyright 2020. All rights Reserved";
+    color: #8C8C94;
+    font-size: 12.5px;
    }
 }
 
