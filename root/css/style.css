@@ -29,7 +29,8 @@ body {
 }
 
 .hidden {
-    display:none;
+    display: none;
+    visibility: hidden;
 }
 
 .flex {
@@ -37,6 +38,8 @@ body {
 }
 
 header {
+    align-items: center;
+    display: flex;
     justify-content: space-between;
     margin: 55px 35px 0 35px;   
 }
@@ -148,34 +151,28 @@ ol p {
 }
 
 .card {
+    align-items: center;
     background-color: #FAFAFA;
     position: relative;
     height: 219px;
+    flex-direction: column;
+    justify-content: center;
     margin: 50px 0 44px 0;
-    width: 445px;
+    width: 445px;   
 }
 
 h3 {
     margin: 30px 0 15px 0;
 }
 
-.card p {
-    color: #B9B9C1;
-}
-
-#card-ali {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#card-ali img {
+.cards img {
     position: absolute;
     top: -50px;
     width: 20%;
 }
 
-#card-ali p {
+.cards p {
+    color: #B9B9C1;
     margin: 0 40px;
     text-align: center;
 }
@@ -252,4 +249,122 @@ footer p {
     font-size: 12.5px;
 }
 
+
+@media screen and (min-width: 1440px){
+
+    header {
+        margin: 55px 130px;
+    }
+
+    #nav-sup {
+        display: flex;
+        visibility: visible;
+    }
+
+    #nav-sup ul {
+        display: flex;
+        list-style: none;
+    }
+
+    #nav-sup ul li {
+        color: #242E52;
+       
+        padding-left: 30px;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited, a:active, a:hover {
+        color: rgba(36, 46, 82, 0.6);
+        text-decoration: none;    
+    }
+
+    #menu-hamburguesa {
+        display: none;
+    }
+
+    #get-started-header {
+        align-items: center;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        visibility: visible;
+    }
+
+   #section-diagrama {
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+   }
+
+   h1 {
+        letter-spacing: -0.035em;
+        margin: 0;
+   }
+
+   #section-diagrama img {
+        height: 525px;
+        max-width: 580px;
+   }
+
+   #section-diagrama article {
+        align-items:flex-start;
+        height: 386px; 
+        justify-content: space-around;
+        margin-right: 800px;
+        text-align: left; 
+        width: 500px;    
+   }
+
+   #section-diagrama article p {
+        margin: 0 130px 0 0px;
+   }
+
+   #section-middle {
+        display: flex;
+   }
+
+   #section-middle div {
+        background-color: #fff;
+
+   }
+
+   .cards {
+        display: flex;
+        visibility: visible;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+   }
+
+   .btn:hover {
+        background-color: rgba(139, 72, 191, 0.7);
+   }
+
+   #section-purple {
+        flex-direction: row;
+        justify-content: space-around;
+   }
+
+   #section-purple h2 {
+        margin: 0 1200px 0 100px;
+        text-align: left;
+   }
+
+   #get-started-down {
+    margin-right: 150px;
+    width: 10%;
+   }
+
+   footer {
+        flex-direction: row-reverse;
+   }
+
+   #logo-redes {
+        display: flex;
+        flex-direction: column-reverse;
+   }
+}
 
