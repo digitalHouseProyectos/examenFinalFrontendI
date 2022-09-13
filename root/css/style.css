@@ -25,7 +25,9 @@ body {
     height: 3550px;
     margin: 0;
     min-width: 480px;
-    width: 100%;    
+    width: 100%; 
+    
+    border: 2px solid black;
 }
 
 .hidden {
@@ -116,7 +118,7 @@ ol li::before {
     height: 43px;
     position: absolute;
     text-align: center;
-    width: 69px;
+    width: 70px;
 }
 
 ol div {
@@ -125,7 +127,7 @@ ol div {
     color: var(--secondary-color-azul);
     height: 43px;
     margin-left: 50px;
-    width: 86%;
+    width: 89%;
 }
 
 ol div h3 {
@@ -216,13 +218,11 @@ footer form {
 
 footer ul {
     color: #fff;
-    justify-content: space-between;
     list-style: none;
-    margin: 0 70px;
 }
 
-footer ul li {
-    margin-top: 15px;
+#nav-footer ul {
+    margin: 0 80px 0 80px;
 }
 
 footer input {
@@ -250,9 +250,11 @@ input::placeholder {
 }
 
 #redes-sociales {
-    justify-content: space-around;
-    margin-bottom: 40px;
-    width: 300%;
+    margin: 15px 0 50px 0;
+}
+
+#redes-sociales li{
+    margin: 0 35px 0 35px;
 } 
 
 footer p {
@@ -261,8 +263,8 @@ footer p {
     margin-bottom: 30px;
 }
 
-
-@media screen and (min-width: 1440px){
+/*
+@media (min-width: 1440px){
 
     header {
         margin: 55px 130px;
