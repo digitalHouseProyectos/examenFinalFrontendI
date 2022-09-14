@@ -22,7 +22,7 @@ html {
 
 body {
     flex-direction: column;
-    height: 3550px;
+    height: 100%;
     margin: 0;
     min-width: 480px;
     width: 100%; 
@@ -44,6 +44,10 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 55px 35px 0 35px;   
+}
+
+main {
+    overflow-x: hidden;
 }
 
 #section-diagrama {
@@ -91,7 +95,6 @@ h1 {
 }
 
 #section-middle article >p {
-    align-self: stretch;
     line-height: 151.1%;
     margin: 0 10px 105px 10px;
     text-align: center;
@@ -127,7 +130,8 @@ ol div {
     color: var(--secondary-color-azul);
     height: 43px;
     margin-left: 50px;
-    width: 89%;
+    
+    width: 100%;
 }
 
 ol div h3 {
@@ -167,13 +171,13 @@ h3 {
     margin: 30px 0 15px 0;
 }
 
-.cards img {
+.card img {
     position: absolute;
     top: -50px;
     width: 20%;
 }
 
-.cards p {
+.card p {
     color: #B9B9C1;
     margin: 0 40px;
     text-align: center;
@@ -267,7 +271,7 @@ footer p {
 @media (min-width: 1440px){
 
     header {
-        margin: 55px 100px;
+        margin: 55px 165px;
     }
 
     #nav-sup {
@@ -282,7 +286,7 @@ footer p {
 
     #nav-sup ul li {
         color: #242E52;
-        padding-left: 30px;
+        margin-left: 30px;
     }
 
     a:link {
@@ -318,33 +322,59 @@ footer p {
    }
 
    #section-diagrama img {
-        height: 525px;
-        max-width: 580px;
+        height: 80vh;
+        max-width: 35vw;
    }
 
    #section-diagrama article {
-        align-items:flex-start;
-        height: 386px; 
-        justify-content: space-around;
-        margin-right: 120px;
-        text-align: left; 
-        width: 500px;    
+        align-items: flex-start;
+        height: 70vh; 
+        flex-direction: column;
+        margin-right: 200px;
+        text-align: left;
+        width: 35vw;    
    }
 
    #section-diagrama article p {
-        margin: 0 130px 0 0px;
+        margin: 30px 270px 30px 0;
    }
 
    #section-middle {
-        display: flex;
+        display:flex;
+        justify-content: center;
+   }
+
+   #section-middle article {
+        width: 35vw;
+   }
+
+   #section-middle>article {
+        margin-right: 20px;
+   }
+
+   #section-middle article h2 {
+        margin: 0 60px 40px 0;
+        text-align: left;
+   }
+
+   #section-middle article>p {
+        margin: 0 300px 40px 0;
+        text-align: left;
    }
 
    #section-middle div {
         background-color: #fff;
-
    }
 
-   .cards {
+   #section-middle article:nth-child(2){
+    margin-left: 150px;
+   }
+
+   ol p {
+        margin: 25px 70px 20px 80px;
+   }
+
+   .card {
         display: flex;
         visibility: visible;
         align-items: center;
@@ -352,7 +382,7 @@ footer p {
         justify-content: center;
    }
 
-   .btn:hover {
+   .btn:hover, #go:hover {
         background-color: rgba(139, 72, 191, 0.7);
    }
 
@@ -362,9 +392,8 @@ footer p {
    }
 
    #section-purple h2 {
-        margin: 0 150px 0 0px;
         text-align: left;
-        width: 40%;
+        width: 30%;
    }
 
    #get-started-down {
@@ -374,6 +403,8 @@ footer p {
 
    footer {
         flex-direction: row-reverse;
+        /*Falta organizar el padding del footer o margin*/
+        /*padding: 100px;*/
    }
 
    footer p {
@@ -385,10 +416,40 @@ footer p {
         flex-direction: column-reverse;
    }
 
-   #form::after {
-    content: "Copyright 2020. All rights Reserved";
-    color: #8C8C94;
-    font-size: 12.5px;
+   #redes-sociales {
+        margin-top: 100px;
    }
+
+   #redes-sociales li {
+        margin: 0 10px 0 10px;
+   }
+
+   #nav-footer ul {
+        margin: 0 220px 0 220px;
+   }
+
+   #nav-footer ul li {
+        margin-bottom: 30px;
+   }
+
+   #form {
+        position: relative;
+   }
+
+   #form form {
+        margin-bottom: 200px;
+   }
+
+   #form::after {
+        content: "Copyright 2020. All rights Reserved";
+        color: #8C8C94;
+        font-size: 12.5px;
+   }
+
+   ::after {
+        position: absolute;
+        right: 20px;
+   }
+
 }
 
