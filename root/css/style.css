@@ -320,13 +320,11 @@ footer p {
    }
 
    #section-diagrama img {
-        height: 80vh;
         max-width: 35vw;
    }
 
    #section-diagrama article {
         align-items: flex-start;
-        height: 70vh; 
         flex-direction: column;
         margin-right: 200px;
         text-align: left;
@@ -347,7 +345,7 @@ footer p {
    }
 
    #section-middle>article {
-        margin-right: 20px;
+        margin-right: 25px;
    }
 
    #section-middle article h2 {
@@ -387,22 +385,24 @@ footer p {
    #section-purple {
         flex-direction: row;
         height: 40vh;
-        justify-content: space-around;
+        justify-content: flex-start;
    }
 
    #section-purple h2 {
+        margin: 0 0 0 230px;
         text-align: left;
         width: 30%;
    }
 
    #get-started-down {
-        margin-right: 100px;
+        margin-left: 610px;
         width: 10%;
    }
 
    footer {
         flex-direction: row-reverse;
         height: 45vh;
+        padding: 0 200px;
         /*Falta organizar el padding del footer o margin*/
         /*padding: 100px;*/
    }
@@ -425,7 +425,7 @@ footer p {
    }
 
    #nav-footer ul {
-        margin: 0 220px 0 220px;
+        margin: 0 100px 0 100px;
    }
 
    #nav-footer ul li {
