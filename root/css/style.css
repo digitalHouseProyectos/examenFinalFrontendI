@@ -26,8 +26,6 @@ body {
     margin: 0;
     min-width: 480px;
     width: 100%; 
-    
-    border: 2px solid black;
 }
 
 .hidden {
@@ -388,6 +386,7 @@ footer p {
 
    #section-purple {
         flex-direction: row;
+        height: 40vh;
         justify-content: space-around;
    }
 
@@ -403,6 +402,7 @@ footer p {
 
    footer {
         flex-direction: row-reverse;
+        height: 45vh;
         /*Falta organizar el padding del footer o margin*/
         /*padding: 100px;*/
    }
@@ -448,6 +448,7 @@ footer p {
 
    ::after {
         position: absolute;
+        top: 230px;
         right: 20px;
    }
 
