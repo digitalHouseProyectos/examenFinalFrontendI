@@ -128,7 +128,6 @@ ol div {
     color: var(--secondary-color-azul);
     height: 43px;
     margin-left: 50px;
-    
     width: 100%;
 }
 
@@ -215,7 +214,7 @@ footer {
 }
 
 footer form {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 footer ul {
@@ -225,6 +224,10 @@ footer ul {
 
 #nav-footer ul {
     margin: 0 80px 0 80px;
+}
+
+#nav-footer ul li {
+    margin-bottom: 15px;
 }
 
 footer input {
@@ -403,8 +406,6 @@ footer p {
         flex-direction: row-reverse;
         height: 45vh;
         padding: 0 200px;
-        /*Falta organizar el padding del footer o margin*/
-        /*padding: 100px;*/
    }
 
    footer p {
@@ -417,7 +418,7 @@ footer p {
    }
 
    #redes-sociales {
-        margin-top: 100px;
+        margin-top: 50px;
    }
 
    #redes-sociales li {
