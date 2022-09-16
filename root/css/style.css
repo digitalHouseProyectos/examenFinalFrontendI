@@ -1,11 +1,14 @@
+/*Se importa la fuente de Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&display=swap%27');
 
+/*Estilos globales*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/*Se definen las variables para los colores utilizados en la página*/
 :root {
     --primary-color-celeste: #3CDDF3;
     --primary-color-violeta: #8B48BF;
@@ -15,11 +18,13 @@
     --variante-color: rgb(249, 249, 249);
 }
 
+/*Se le asigna la fuente y el tamaño de la fuente a la página*/
 html {
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 16px;
 }
 
+/*Asignación del tamaño de la página para hacer FIRST MOBILE 480px*/
 body {
     flex-direction: column;
     height: 100%;
@@ -28,15 +33,18 @@ body {
     width: 100%; 
 }
 
+/*Clase para ocultar elementos HTML*/
 .hidden {
     display: none;
     visibility: hidden;
 }
 
+/*Clase display flex*/
 .flex {
     display: flex;    
 }
 
+/*Estilos del encabezado de la página*/
 header {
     align-items: center;
     display: flex;
@@ -44,10 +52,12 @@ header {
     margin: 55px 35px 0 35px;   
 }
 
+/*Estilo para que no se desborde la página en el eje x*/
 main {
     overflow-x: hidden;
 }
 
+/*Estilos para la sección artículo - diagrama*/
 #section-diagrama {
     flex-direction: column-reverse;
 }
@@ -64,6 +74,7 @@ main {
     text-align: center;
 }
 
+/*Estilos del título*/
 h1 {
     color: var(--secondary-color-azul);
     font-size: 58px;
@@ -76,6 +87,7 @@ h1 {
     margin: 15px 60px 20px;
 }
 
+/*Estilos generales para un botón*/
 .btn {
     background-color: var(--primary-color-violeta);
     border: none;
@@ -85,6 +97,7 @@ h1 {
     width: 134px;
 }
 
+/*Estilos para la sección artíulo - lista enumerada*/
 #section-middle article h2 {
     color: var(--secondary-color-azul);
     font-size: 36px;
@@ -98,6 +111,7 @@ h1 {
     text-align: center;
 }
 
+/*Estilos de la lista de la sección media*/
 ol {
     margin: 0 0 120px 30px;
 }
@@ -108,6 +122,7 @@ ol li {
     position: relative;
 }
 
+/*Se crea una lista para la sección media*/
 ol li::before {
     align-items: center;
     background-color: var(--primary-color-violeta);
@@ -142,6 +157,7 @@ ol p {
     text-align: left;
 }
 
+/*Estilos de la sección de las cards*/
 #section-cards {
     align-items: center;
     flex-direction: column;
@@ -153,6 +169,7 @@ ol p {
     margin-bottom: 100px;
 }
 
+/*Estilos generales para una card*/
 .card {
     align-items: center;
     background-color: #FAFAFA;
@@ -180,6 +197,7 @@ h3 {
     text-align: center;
 }
 
+/*Estilos para la sección púrpura*/
 #section-purple {
     align-items: center;
     background-color: var(--primary-color-violeta);
@@ -204,6 +222,7 @@ h3 {
     color: var(--primary-color-violeta);
 }
 
+/*Estilos generales del footer*/
 footer {
     align-items: center;
     background-color: var(--gris-oscuro);
@@ -240,15 +259,18 @@ input::placeholder {
     padding-left: 10px;
 }
 
+/*Estilos del botón go*/
 #go {
     background-color: var(--primary-color-violeta);
     border: none;
     border-radius: 50px;
     color: #fff;
+    cursor: pointer;
     height: 42px;
     width: 63px;
 }
 
+/*Estilos de la sección footer donde están los logos de las redes sociales*/
 #logo-redes {
     align-items: center;
     flex-direction: column;
@@ -260,7 +282,17 @@ input::placeholder {
 
 #redes-sociales li{
     margin: 0 35px 0 35px;
-} 
+}
+
+/*Navbar del footer*/
+#nav-footer a:link {
+    text-decoration: none;
+}
+
+#nav-footer a:visited, #nav-footer a:active, #nav-footer a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;    
+}
 
 footer p {
     color: #8C8C94;
@@ -268,9 +300,10 @@ footer p {
     margin-bottom: 30px;
 }
 
-
+/*Media query Desktop Medida de 1440px*/
 @media (min-width: 1440px){
 
+    /*Estilos generales del header en la vista Desktop*/
     header {
         margin: 55px 165px;
     }
@@ -290,6 +323,11 @@ footer p {
         margin-left: 30px;
     }
 
+    .btn {
+        cursor: pointer;
+    }
+
+    /*Controles de los eventos del enlace en navbar del header*/
     a:link {
         text-decoration: none;
     }
@@ -299,10 +337,12 @@ footer p {
         text-decoration: none;    
     }
 
+    /*Se oculta el menú hamburguesa*/
     #menu-hamburguesa {
         display: none;
     }
 
+    /*Estilos del botón del header*/
     #get-started-header {
         align-items: center;
         box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
@@ -311,147 +351,156 @@ footer p {
         visibility: visible;
     }
 
-   #section-diagrama {
+    /*Estilos de la sección artículo - diagrama*/
+    #section-diagrama {
         align-items: center;
         flex-direction: row;
         justify-content: center;
-   }
+    }
 
-   h1 {
+    h1 {
         letter-spacing: -0.035em;
         margin: 0;
-   }
+    }
 
-   #section-diagrama img {
+    #section-diagrama img {
         max-width: 35vw;
-   }
+    }
 
-   #section-diagrama article {
+    #section-diagrama article {
         align-items: flex-start;
         flex-direction: column;
         margin-right: 200px;
         text-align: left;
         width: 35vw;    
-   }
+    }
 
-   #section-diagrama article p {
+    #section-diagrama article p {
         margin: 30px 270px 30px 0;
-   }
+    }
 
-   #section-middle {
+    /*Estilos de la sección media artículo - lista*/
+    #section-middle {
         display:flex;
         justify-content: center;
-   }
+    }
 
-   #section-middle article {
+    #section-middle article {
         width: 35vw;
-   }
+    }
 
-   #section-middle>article {
+    #section-middle>article {
         margin-right: 25px;
-   }
+    }
 
-   #section-middle article h2 {
+    #section-middle article h2 {
         margin: 0 60px 40px 0;
         text-align: left;
-   }
+    }
 
-   #section-middle article>p {
+    #section-middle article>p {
         margin: 0 300px 40px 0;
         text-align: left;
-   }
+    }
 
-   #section-middle div {
+    #section-middle div {
         background-color: #fff;
-   }
+    }
 
-   #section-middle article:nth-child(2){
-    margin-left: 150px;
-   }
+    #section-middle article:nth-child(2){
+        margin-left: 150px;
+    }
 
-   ol p {
+    ol p {
         margin: 25px 70px 20px 80px;
-   }
+    }
 
-   .card {
+    /*Sección de las cards*/
+    .card {
         display: flex;
         visibility: visible;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-   }
+    }
 
-   .btn:hover, #go:hover {
-        background-color: rgba(139, 72, 191, 0.7);
-   }
-
-   #section-purple {
+    /*Estilos de la sección púrpura*/
+    #section-purple {
         flex-direction: row;
         height: 40vh;
         justify-content: flex-start;
-   }
+    }
 
-   #section-purple h2 {
+    #section-purple h2 {
         margin: 0 0 0 230px;
         text-align: left;
         width: 30%;
-   }
+    }
 
-   #get-started-down {
+    #get-started-down {
         margin-left: 610px;
         width: 10%;
-   }
+    }
 
-   footer {
+    /*Estilos generales del footer en la vista Desktop*/
+    footer {
         flex-direction: row-reverse;
         height: 45vh;
         padding: 0 200px;
-   }
+    }
 
-   footer p {
+    footer p {
         display: none;
-   }
+    }
 
-   #logo-redes {
+    /*Estilos de la sección de las redes sociales en el footer*/
+    #logo-redes {
         display: flex;
         flex-direction: column-reverse;
-   }
+    }
 
-   #redes-sociales {
+    #redes-sociales {
         margin-top: 50px;
-   }
+    }
 
-   #redes-sociales li {
+    #redes-sociales li {
         margin: 0 10px 0 10px;
-   }
+    }
 
-   #nav-footer ul {
+    /*Sección navbar del footer en la vista Desktop*/
+    #nav-footer ul {
         margin: 0 100px 0 100px;
-   }
+    }
 
-   #nav-footer ul li {
+    #nav-footer ul li {
         margin-bottom: 30px;
-   }
+    }
 
-   #form {
+    /*Estilos generales del formulario del footer*/
+    #form {
         position: relative;
-   }
+    }
 
-   #form form {
+    #form form {
         margin-bottom: 200px;
-   }
+    }
 
-   #form::after {
+    .btn:hover, #go:hover {
+        background-color: rgba(139, 72, 191, 0.7);
+    }
+
+    /*Se inserta el copy debajo del formulario*/
+    #form::after {
         content: "Copyright 2020. All rights Reserved";
         color: #8C8C94;
         font-size: 12.5px;
-   }
+    }
 
-   ::after {
+    /*Se posiciona el copy*/
+    ::after {
         position: absolute;
         top: 230px;
         right: 20px;
-   }
-
+    }
 }
 

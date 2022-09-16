@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f2f0492e67.js" crossorigin="anonymous"></script>
     <title>Manage Home</title>
+    <script src="https://kit.fontawesome.com/f2f0492e67.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<!--Cuerpo de la página-->
 <body class="flex">
+    <!--Encabezado de la página: logotipo, nav-bar y botón get started-->
     <header class="flex">
         <img src="./img/logo.svg" alt="logotipo-header">
         <nav class="hidden" id="nav-sup">
@@ -23,8 +25,11 @@
         <img src="./img/icon-hamburger.svg" alt="menu-hamburguesa" id="menu-hamburguesa">
         <button type="submit" name="get-started-header" id="get-started-header" class="hidden btn">Get Started</button>
     </header>
+    <!--Cuerpo de la página-->
     <main>
+        <!--Sección que contiene un artículo con un botón get started y un diagrama-->
         <section class="flex" id="section-diagrama">
+            <!--Artículo-->
             <article class="flex">
                 <h1>
                     Bring everyone together to build better products.
@@ -34,9 +39,12 @@
                 </p>
                 <button type="submit" name="get-started-section" id="get-started-section" class="btn">Get Started</button>
             </article>
+            <!--Diagrama-->
             <img src="./img/Groupintro.png" alt="diagramas">
         </section>
+        <!--Sección media, contiene un artículo y una lista ordenada-->
         <section id="section-middle">
+            <!--Artículo-->
             <article>
                 <h2>
                     What´s different about Manage?
@@ -46,6 +54,7 @@
                 </p>
             </article>
             <article>
+                <!--Lista ordenada-->
                 <ol>
                     <li>
                         <div class="flex"><h3>Track company-wide progress</h3></div>
@@ -62,8 +71,10 @@
                 </ol>
             </article>
         </section>
+        <!--Sección de las cards-->
         <section id="section-cards" class="flex">
             <h2>What they´ve said</h2>
+            <!--Cards-->
             <div class="flex">
                 <article class="hidden card">
                     <img src="./img/avatar-anisha.png" alt="avatar-anisha">
@@ -83,33 +94,38 @@
             </div>
             <button type="submit" name="get-started-section" id="get-started-card" class="btn">Get Started</button>
         </section>
+        <!--Sección con fondo púrpura-->
         <section id="section-purple" class="flex">
             <h2>Simplify how your team words today.</h2>
             <button type="submit" name="get-started-down" id="get-started-down" class="btn">Get Started</button>
         </section>
     </main>
-    <footer class="flex">   
+    <!--footer: Logotipo, acceso a redes sociales, Nav-bar, Formulario, Copy-->
+    <footer class="flex">
+        <!--Formulario-->   
         <section id="form">
-            <form action="suscripciones.js" method="GET">
+            <form action="suscripciones.js" method="POST">
                 <input type="email" name="email" id="email" placeholder="Update in your inbox...">
                 <button type="submit" name="go" id="go">Go</button>
             </form>
         </section>
+        <!--Navbar-->
         <section>
             <nav class="flex" id="nav-footer">
                 <ul>
-                    <li>Home</li>
-                    <li>Pricing</li>
-                    <li>Products</li>
-                    <li>About Us</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About Us</a></li>
                 </ul>
                 <ul>
-                    <li>Careers</li>
-                    <li>Community</li>
-                    <li>Privacy Policy</li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Privacy Policy</a></li>
                 </ul>
             </nav>
         </section>
+        <!--Acceso a redes sociales-->
         <section id="logo-redes" class="flex">
             <ul class="flex" id="redes-sociales"> 
                 <li><i class="fa-brands fa-square-facebook"></i></li>
@@ -120,6 +136,7 @@
             </ul>
             <div><img src="./img/Logologowhite.png" alt="logotipo-footer"></div>
         </section>
+        <!--Copy-->
         <p>Copyright 2020. All rights Reserved</p>
     </footer>
 </body>
